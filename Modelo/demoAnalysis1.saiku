@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Query name="DFEA3FF5-88E8-2AF8-A5B5-648296DDF162" type="QM" connection="Sales" cube="[Sales]" catalog="Sales" schema="Sales">
+  <QueryModel>
+    <Axes>
+      <Axis location="ROWS" nonEmpty="true">
+        <Dimensions>
+          <Dimension name="Time" hierarchizeMode="PRE" hierarchyConsistent="true">
+            <Inclusions>
+              <Selection dimension="Time" type="level" node="[Time.Sale date].[Sale date]" operator="MEMBERS" />
+            </Inclusions>
+            <Exclusions />
+          </Dimension>
+        </Dimensions>
+      </Axis>
+      <Axis location="COLUMNS" nonEmpty="true">
+        <Dimensions>
+          <Dimension name="Customers" hierarchizeMode="PRE" hierarchyConsistent="true">
+            <Inclusions>
+              <Selection dimension="Customers" type="member" node="[Customers.Customer name].[Mrs Clair Lennox]" operator="MEMBER" />
+              <Selection dimension="Customers" type="member" node="[Customers.Customer name].[Mrs Lindsay Cross]" operator="MEMBER" />
+              <Selection dimension="Customers" type="member" node="[Customers.Customer name].[Mrs Susan North]" operator="MEMBER" />
+              <Selection dimension="Customers" type="member" node="[Customers.Customer name].[Mrs Susi Redcliff]" operator="MEMBER" />
+            </Inclusions>
+            <Exclusions />
+          </Dimension>
+          <Dimension name="Measures" hierarchizeMode="PRE" hierarchyConsistent="true">
+            <Inclusions>
+              <Selection dimension="Measures" type="member" node="[Measures].[Sales]" operator="MEMBER" />
+            </Inclusions>
+            <Exclusions />
+          </Dimension>
+        </Dimensions>
+      </Axis>
+      <Axis location="FILTER" nonEmpty="false" />
+    </Axes>
+  </QueryModel>
+  <MDX>SELECT
+NON EMPTY Hierarchize(Union(CrossJoin({[Customers.Customer name].[Mrs Clair Lennox]}, {[Measures].[Sales]}), Union(CrossJoin({[Customers.Customer name].[Mrs Lindsay Cross]}, {[Measures].[Sales]}), Union(CrossJoin({[Customers.Customer name].[Mrs Susan North]}, {[Measures].[Sales]}), CrossJoin({[Customers.Customer name].[Mrs Susi Redcliff]}, {[Measures].[Sales]}))))) ON COLUMNS,
+NON EMPTY {Hierarchize({[Time.Sale date].[Sale date].Members})} ON ROWS
+FROM [Sales]</MDX>
+  <Totals>
+    <Total uniqueLevelName="ROWS" functionName="sum" />
+    <Total uniqueLevelName="COLUMNS" functionName="sum" />
+  </Totals>
+  <Properties>
+    <Property name="saiku.ui.render.mode" value="table" />
+    <Property name="org.saiku.query.explain" value="true" />
+    <Property name="saiku.ui.render.type" value="" />
+    <Property name="saiku.olap.query.nonempty.columns" value="true" />
+    <Property name="saiku.olap.query.nonempty.rows" value="true" />
+    <Property name="org.saiku.connection.scenario" value="false" />
+    <Property name="saiku.olap.query.automatic_execution" value="true" />
+    <Property name="saiku.olap.query.drillthrough" value="true" />
+    <Property name="saiku.olap.query.filter" value="true" />
+    <Property name="saiku.olap.query.limit" value="true" />
+    <Property name="saiku.olap.query.nonempty" value="true" />
+  </Properties>
+</Query>
+

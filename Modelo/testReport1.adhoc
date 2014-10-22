@@ -1,0 +1,624 @@
+{
+ "version": "V_1_0",
+ "domainId": "agilebi/resources/metadata/Sales.xmi",
+ "logicalModelId": "MODEL_1",
+ "reportHeaderElements": [
+  {
+   "uid": "rpt-rhd-0-0",
+   "elementFormat": {
+    "width": null,
+    "fontUnderlined": false,
+    "paddingLeft": 0,
+    "paddingRight": 0,
+    "fontBold": false,
+    "fontSize": 0,
+    "fontItalic": null,
+    "backgroundColor": null,
+    "horizontalAlignment": "CENTER",
+    "verticalAlignment": "MIDDLE",
+    "fontName": "Arial",
+    "fontColor": "#8a1614"
+   },
+   "layoutId": "rpt-rhd-0-0",
+   "value": "Sales by Category - (Online sales)"
+  },
+  {
+   "uid": "rpt-rhd-0-1",
+   "elementFormat": {
+    "width": null,
+    "fontUnderlined": null,
+    "paddingLeft": null,
+    "paddingRight": null,
+    "fontBold": null,
+    "fontSize": 0,
+    "fontItalic": null,
+    "backgroundColor": null,
+    "horizontalAlignment": null,
+    "verticalAlignment": null,
+    "fontName": null,
+    "fontColor": null
+   },
+   "layoutId": "rpt-rhd-0-1",
+   "value": null
+  },
+  {
+   "uid": "rpt-rhd-0-2",
+   "elementFormat": {
+    "width": null,
+    "fontUnderlined": null,
+    "paddingLeft": null,
+    "paddingRight": null,
+    "fontBold": null,
+    "fontSize": 0,
+    "fontItalic": null,
+    "backgroundColor": null,
+    "horizontalAlignment": null,
+    "verticalAlignment": null,
+    "fontName": null,
+    "fontColor": null
+   },
+   "layoutId": "rpt-rhd-0-2",
+   "value": null
+  }
+ ],
+ "pageHeaderElements": [
+  {
+   "uid": "rpt-phd-0-2",
+   "elementFormat": {
+    "width": null,
+    "fontUnderlined": null,
+    "paddingLeft": null,
+    "paddingRight": null,
+    "fontBold": null,
+    "fontSize": 0,
+    "fontItalic": null,
+    "backgroundColor": null,
+    "horizontalAlignment": null,
+    "verticalAlignment": null,
+    "fontName": null,
+    "fontColor": null
+   },
+   "layoutId": "rpt-phd-0-2",
+   "value": "$(report.date, date, MMMM dd, yyyy @ hh:mm )"
+  },
+  {
+   "uid": "rpt-phd-0-1",
+   "elementFormat": {
+    "width": null,
+    "fontUnderlined": null,
+    "paddingLeft": null,
+    "paddingRight": null,
+    "fontBold": null,
+    "fontSize": 0,
+    "fontItalic": null,
+    "backgroundColor": null,
+    "horizontalAlignment": null,
+    "verticalAlignment": null,
+    "fontName": null,
+    "fontColor": null
+   },
+   "layoutId": "rpt-phd-0-1",
+   "value": null
+  }
+ ],
+ "pageFooterElements": [
+  {
+   "uid": "rpt-pft-0-0",
+   "elementFormat": {
+    "width": null,
+    "fontUnderlined": null,
+    "paddingLeft": null,
+    "paddingRight": null,
+    "fontBold": null,
+    "fontSize": 0,
+    "fontItalic": null,
+    "backgroundColor": null,
+    "horizontalAlignment": null,
+    "verticalAlignment": null,
+    "fontName": null,
+    "fontColor": null
+   },
+   "layoutId": "rpt-pft-0-0",
+   "value": null
+  },
+  {
+   "uid": "rpt-pft-0-1",
+   "elementFormat": {
+    "width": null,
+    "fontUnderlined": null,
+    "paddingLeft": null,
+    "paddingRight": null,
+    "fontBold": null,
+    "fontSize": 0,
+    "fontItalic": null,
+    "backgroundColor": null,
+    "horizontalAlignment": null,
+    "verticalAlignment": null,
+    "fontName": null,
+    "fontColor": null
+   },
+   "layoutId": "rpt-pft-0-1",
+   "value": "$(report.date, date, MMMM dd, yyyy @ hh:mm )"
+  }
+ ],
+ "reportFooterElements": [
+  {
+   "uid": "rpt-rft-0-3",
+   "elementFormat": {
+    "width": null,
+    "fontUnderlined": null,
+    "paddingLeft": null,
+    "paddingRight": null,
+    "fontBold": null,
+    "fontSize": 0,
+    "fontItalic": null,
+    "backgroundColor": null,
+    "horizontalAlignment": null,
+    "verticalAlignment": null,
+    "fontName": null,
+    "fontColor": null
+   },
+   "layoutId": "rpt-rft-0-3",
+   "value": ""
+  }
+ ],
+ "columns": [
+  {
+   "uid": "uid-0",
+   "defaultAggType": "NONE",
+   "columnHeaderFormat": {
+    "width": 12.207791,
+    "fontUnderlined": null,
+    "paddingLeft": null,
+    "paddingRight": null,
+    "fontBold": null,
+    "fontSize": 0,
+    "fontItalic": null,
+    "backgroundColor": null,
+    "horizontalAlignment": null,
+    "verticalAlignment": null,
+    "fontName": null,
+    "fontColor": null
+   },
+   "elementFormat": {
+    "width": null,
+    "fontUnderlined": null,
+    "paddingLeft": null,
+    "paddingRight": null,
+    "fontBold": null,
+    "fontSize": 0,
+    "fontItalic": null,
+    "backgroundColor": null,
+    "horizontalAlignment": null,
+    "verticalAlignment": null,
+    "fontName": null,
+    "fontColor": null
+   },
+   "aggTypes": [
+    "NONE",
+    "COUNT",
+    "COUNT_DISTINCT"
+   ],
+   "selectedAggType": "NONE",
+   "formatMask": "dd/MM/yyyy",
+   "selectedSummaryType": "NONE",
+   "hideRepeating": false,
+   "layoutId": "rpt-dtl-0-0",
+   "hideOnReport": false,
+   "formula": null,
+   "sort": "NONE",
+   "category": "Sales",
+   "description": "LC_Fact_sale_sale_date_2",
+   "name": "Date",
+   "id": "LC_Fact_sale_sale_date_2",
+   "fieldType": "Date"
+  },
+  {
+   "uid": "uid-5",
+   "defaultAggType": "NONE",
+   "columnHeaderFormat": {
+    "width": 18.943722,
+    "fontUnderlined": null,
+    "paddingLeft": null,
+    "paddingRight": null,
+    "fontBold": null,
+    "fontSize": 0,
+    "fontItalic": null,
+    "backgroundColor": null,
+    "horizontalAlignment": null,
+    "verticalAlignment": null,
+    "fontName": null,
+    "fontColor": null
+   },
+   "elementFormat": {
+    "width": null,
+    "fontUnderlined": null,
+    "paddingLeft": null,
+    "paddingRight": null,
+    "fontBold": null,
+    "fontSize": 0,
+    "fontItalic": null,
+    "backgroundColor": null,
+    "horizontalAlignment": null,
+    "verticalAlignment": null,
+    "fontName": null,
+    "fontColor": null
+   },
+   "aggTypes": [
+    "NONE",
+    "COUNT",
+    "COUNT_DISTINCT"
+   ],
+   "selectedAggType": "NONE",
+   "formatMask": null,
+   "selectedSummaryType": "NONE",
+   "hideRepeating": false,
+   "layoutId": "rpt-dtl-0-1",
+   "hideOnReport": false,
+   "formula": null,
+   "sort": "NONE",
+   "category": "Customer",
+   "description": "LC_Fact_sale_customer_name_2",
+   "name": "Customer",
+   "id": "LC_Fact_sale_customer_name_2",
+   "fieldType": "String"
+  },
+  {
+   "uid": "uid-2",
+   "defaultAggType": "NONE",
+   "columnHeaderFormat": {
+    "width": 51.532467,
+    "fontUnderlined": null,
+    "paddingLeft": null,
+    "paddingRight": null,
+    "fontBold": null,
+    "fontSize": 0,
+    "fontItalic": null,
+    "backgroundColor": null,
+    "horizontalAlignment": null,
+    "verticalAlignment": null,
+    "fontName": null,
+    "fontColor": null
+   },
+   "elementFormat": {
+    "width": null,
+    "fontUnderlined": null,
+    "paddingLeft": null,
+    "paddingRight": null,
+    "fontBold": null,
+    "fontSize": 0,
+    "fontItalic": null,
+    "backgroundColor": null,
+    "horizontalAlignment": null,
+    "verticalAlignment": null,
+    "fontName": null,
+    "fontColor": null
+   },
+   "aggTypes": [
+    "NONE",
+    "COUNT",
+    "COUNT_DISTINCT"
+   ],
+   "selectedAggType": "NONE",
+   "formatMask": null,
+   "selectedSummaryType": "NONE",
+   "hideRepeating": false,
+   "layoutId": "rpt-dtl-0-2",
+   "hideOnReport": false,
+   "formula": null,
+   "sort": "NONE",
+   "category": "Lens",
+   "description": "LC_Fact_sale_lens_name_2",
+   "name": "Lens name",
+   "id": "LC_Fact_sale_lens_name_2",
+   "fieldType": "String"
+  },
+  {
+   "uid": "uid-4",
+   "defaultAggType": "NONE",
+   "columnHeaderFormat": {
+    "width": null,
+    "fontUnderlined": false,
+    "paddingLeft": 0,
+    "paddingRight": 0,
+    "fontBold": false,
+    "fontSize": 0,
+    "fontItalic": null,
+    "backgroundColor": null,
+    "horizontalAlignment": "LEFT",
+    "verticalAlignment": "MIDDLE",
+    "fontName": "Arial",
+    "fontColor": "#ffffff"
+   },
+   "elementFormat": {
+    "width": null,
+    "fontUnderlined": false,
+    "paddingLeft": 0,
+    "paddingRight": 0,
+    "fontBold": false,
+    "fontSize": 10,
+    "fontItalic": null,
+    "backgroundColor": null,
+    "horizontalAlignment": "RIGHT",
+    "verticalAlignment": "MIDDLE",
+    "fontName": "Arial",
+    "fontColor": "#666666"
+   },
+   "aggTypes": [
+    "MINIMUM",
+    "SUM",
+    "AVERAGE",
+    "MAXIMUM",
+    "NONE",
+    "COUNT",
+    "COUNT_DISTINCT"
+   ],
+   "selectedAggType": "NONE",
+   "formatMask": "#",
+   "selectedSummaryType": "SUM",
+   "hideRepeating": false,
+   "layoutId": "rpt-dtl-0-3",
+   "hideOnReport": false,
+   "formula": null,
+   "sort": "NONE",
+   "category": "Sales",
+   "description": "LC_Fact_sale_sales_2",
+   "name": "Sale amount",
+   "id": "LC_Fact_sale_sales_2",
+   "fieldType": "Numeric"
+  }
+ ],
+ "sortColumns": [],
+ "groups": [
+  {
+   "columnId": "LC_Fact_sale_lens_category_2",
+   "uid": "uid-1",
+   "groupHeaderFormat": {
+    "width": null,
+    "fontUnderlined": null,
+    "paddingLeft": null,
+    "paddingRight": null,
+    "fontBold": null,
+    "fontSize": 0,
+    "fontItalic": null,
+    "backgroundColor": null,
+    "horizontalAlignment": null,
+    "verticalAlignment": null,
+    "fontName": null,
+    "fontColor": null
+   },
+   "groupFooterElements": [
+    {
+     "uid": "rpt-gft-0-0",
+     "elementFormat": {
+      "width": null,
+      "fontUnderlined": false,
+      "paddingLeft": 0,
+      "paddingRight": 0,
+      "fontBold": false,
+      "fontSize": 12,
+      "fontItalic": null,
+      "backgroundColor": "#cfd1cf",
+      "horizontalAlignment": "LEFT",
+      "verticalAlignment": "MIDDLE",
+      "fontName": "Arial",
+      "fontColor": "#000000"
+     },
+     "layoutId": "rpt-gft-0-0",
+     "value": null
+    },
+    {
+     "uid": "rpt-gft-0-1",
+     "elementFormat": {
+      "width": null,
+      "fontUnderlined": false,
+      "paddingLeft": 0,
+      "paddingRight": 0,
+      "fontBold": false,
+      "fontSize": 12,
+      "fontItalic": null,
+      "backgroundColor": "#cfd1cf",
+      "horizontalAlignment": "LEFT",
+      "verticalAlignment": "MIDDLE",
+      "fontName": "Arial",
+      "fontColor": "#000000"
+     },
+     "layoutId": "rpt-gft-0-1",
+     "value": null
+    },
+    {
+     "uid": "rpt-gft-0-2",
+     "elementFormat": {
+      "width": null,
+      "fontUnderlined": false,
+      "paddingLeft": 0,
+      "paddingRight": 0,
+      "fontBold": false,
+      "fontSize": 12,
+      "fontItalic": null,
+      "backgroundColor": "#cfd1cf",
+      "horizontalAlignment": "LEFT",
+      "verticalAlignment": "MIDDLE",
+      "fontName": "Arial",
+      "fontColor": "#000000"
+     },
+     "layoutId": "rpt-gft-0-2",
+     "value": null
+    },
+    {
+     "uid": "rpt-gft-0-3",
+     "elementFormat": {
+      "width": null,
+      "fontUnderlined": false,
+      "paddingLeft": 0,
+      "paddingRight": 0,
+      "fontBold": false,
+      "fontSize": 0,
+      "fontItalic": null,
+      "backgroundColor": "#cfd1cf",
+      "horizontalAlignment": "RIGHT",
+      "verticalAlignment": "MIDDLE",
+      "fontName": "Arial",
+      "fontColor": "#ffffff"
+     },
+     "layoutId": "rpt-gft-0-3",
+     "value": ""
+    },
+    {
+     "uid": "rpt-gft-0-4",
+     "elementFormat": {
+      "width": null,
+      "fontUnderlined": null,
+      "paddingLeft": null,
+      "paddingRight": null,
+      "fontBold": null,
+      "fontSize": 0,
+      "fontItalic": null,
+      "backgroundColor": null,
+      "horizontalAlignment": null,
+      "verticalAlignment": null,
+      "fontName": null,
+      "fontColor": null
+     },
+     "layoutId": "rpt-gft-0-4",
+     "value": null
+    }
+   ],
+   "layoutId": "rpt-ghd-0-0",
+   "groupTotalsLabel": "Total Lens category",
+   "dataFormat": null,
+   "sort": "ASC",
+   "category": "Lens Category",
+   "columnName": "Lens category",
+   "groupName": "Category: $(Lens category)",
+   "displayName": "Lens category"
+  }
+ ],
+ "reportSummaryElements": [
+  {
+   "uid": "rpt-sum-0-0",
+   "elementFormat": {
+    "width": null,
+    "fontUnderlined": null,
+    "paddingLeft": null,
+    "paddingRight": null,
+    "fontBold": null,
+    "fontSize": 0,
+    "fontItalic": null,
+    "backgroundColor": null,
+    "horizontalAlignment": null,
+    "verticalAlignment": null,
+    "fontName": null,
+    "fontColor": null
+   },
+   "layoutId": "rpt-sum-0-0",
+   "value": null
+  },
+  {
+   "uid": "rpt-sum-0-1",
+   "elementFormat": {
+    "width": null,
+    "fontUnderlined": null,
+    "paddingLeft": null,
+    "paddingRight": null,
+    "fontBold": null,
+    "fontSize": 0,
+    "fontItalic": null,
+    "backgroundColor": null,
+    "horizontalAlignment": null,
+    "verticalAlignment": null,
+    "fontName": null,
+    "fontColor": null
+   },
+   "layoutId": "rpt-sum-0-1",
+   "value": null
+  },
+  {
+   "uid": "rpt-sum-0-2",
+   "elementFormat": {
+    "width": null,
+    "fontUnderlined": null,
+    "paddingLeft": null,
+    "paddingRight": null,
+    "fontBold": null,
+    "fontSize": 0,
+    "fontItalic": null,
+    "backgroundColor": null,
+    "horizontalAlignment": null,
+    "verticalAlignment": null,
+    "fontName": null,
+    "fontColor": null
+   },
+   "layoutId": "rpt-sum-0-2",
+   "value": null
+  },
+  {
+   "uid": "rpt-sum-0-3",
+   "elementFormat": {
+    "width": null,
+    "fontUnderlined": false,
+    "paddingLeft": 0,
+    "paddingRight": 0,
+    "fontBold": true,
+    "fontSize": 0,
+    "fontItalic": null,
+    "backgroundColor": null,
+    "horizontalAlignment": "RIGHT",
+    "verticalAlignment": "MIDDLE",
+    "fontName": "Arial",
+    "fontColor": "#a5a297"
+   },
+   "layoutId": "rpt-sum-0-3",
+   "value": ""
+  },
+  {
+   "uid": "rpt-sum-0-4",
+   "elementFormat": {
+    "width": null,
+    "fontUnderlined": null,
+    "paddingLeft": null,
+    "paddingRight": null,
+    "fontBold": null,
+    "fontSize": 0,
+    "fontItalic": null,
+    "backgroundColor": null,
+    "horizontalAlignment": null,
+    "verticalAlignment": null,
+    "fontName": null,
+    "fontColor": null
+   },
+   "layoutId": "rpt-sum-0-4",
+   "value": null
+  }
+ ],
+ "parameters": [
+  {
+   "uid": "uid-6",
+   "category": "Channel",
+   "parameterValues": [
+    "online"
+   ],
+   "name": "Sales channel",
+   "id": "LC_Fact_sale_sales_channel_2",
+   "type": "String"
+  }
+ ],
+ "settings": {
+  "limit": -1,
+  "reportTemplate": {
+   "solution": "system",
+   "description": null,
+   "name": "nickel_4_left_aligned_grid",
+   "path": "saiku-adhoc/resources/templates"
+  },
+  "disableDistinct": false,
+  "marginLeft": 18,
+  "marginRight": 18,
+  "marginBottom": 18,
+  "marginTop": 18,
+  "pageFormat": "LETTER",
+  "orientation": 1
+ },
+ "clientModelSelection": "agilebi%2Fresources%2Fmetadata%2FSales.xmi/MODEL_1",
+ "maxClientSeq": 7
+}
